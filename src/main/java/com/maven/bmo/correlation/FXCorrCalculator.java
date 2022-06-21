@@ -76,7 +76,7 @@ public class FXCorrCalculator {
 
 		double correlation  = ((n*sumXY) - (sumX*sumY))/Math.sqrt((n*sumXX - (sumX*sumX))*(n*sumYY - (sumY*sumY)));
 		
-		correlation = Double.isInfinite(correlation) ? 0 : correlation; // Corner case, if values of quotes are unchanged in given range of date
+		correlation = (Double.isInfinite(correlation)|| Double.isNaN(correlation)) ? 0 : correlation; // Corner case, if values of quotes are unchanged in given range of date
 		
 		return correlation;
 	}
