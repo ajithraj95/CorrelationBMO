@@ -14,7 +14,7 @@
 	
     	<div class="u-form-group">
 			<label for="highFX" class="u-label">High USD/CAD</label>
-			<input id="highFX" name="highFX" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" type="text" value="${lowFX}" readonly>
+			<input id="highFX" name="highFX" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" type="text" value="${highFX}" readonly>
         </div>
         <br>
         <div class="u-form-group">
